@@ -10,7 +10,7 @@ export default function Todo() {
       <h3 className='font-bold text-center text-4xl'>{todos.length} TODOS TO DO</h3>
       <div className="grid grid-cols-1 place-items-center laptop:grid-cols-2 desktop:grid-cols-3">
     
-        {todos.map((todo)=>(
+        {todos.length==0 ? <h1>loading</h1> :todos.map((todo)=>(
           
           <div class="max-w-sm p-6 m-5 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
               <div className='grid grid-cols-4 gap-5'>

@@ -1,7 +1,7 @@
 import React, {useContext, useEffect} from 'react'
 import axios from 'axios'
-import testContext from './textContext'
-import Todo from './Todo';
+import testContext from '../textContext'
+import Todo from '../Todo';
 
 export default function Todos() {
     const {todos, setTodos} = useContext(testContext);
