@@ -1,0 +1,22 @@
+.todo{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+
+
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+}
+.todoFinish{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todoFinish > button{
+    
+    padding: 15px;
+    margin: auto;
+    text-align: center;
+    
+}
