@@ -6,8 +6,9 @@ export default function Test() {
   
     function onSubmit(e) {
         e.preventDefault();
+        console.log("TEST",e.target.title.value)
         setTest(e.target.title.value);
-        console.log(test);
+        
     }
 
   return (
@@ -16,9 +17,9 @@ export default function Test() {
       {test}
       <br/>
       <form onSubmit={onSubmit}>
-        <input type="text" class="rounded-lg p-2.5 bg-black text-green-200 border-gray-300 border" name="title"/>
+        <input type="text" className="rounded-lg p-2.5 bg-black text-green-200 border-gray-300 border" name="title"/>
       
-        <button type="submit"  class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">save</button>
+        <button type="submit"  className="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">save</button>
       </form>
       
     </div>
